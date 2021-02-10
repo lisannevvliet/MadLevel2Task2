@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Mad Level 2 Task 2</string>
+    <string name="title">Quiz instructions</string>
+    <string name="instructions">Swipe right for true, swipe left for false.</string>
+    <string name="wrong">Wrong!</string>
+</resources>
