@@ -53,7 +53,7 @@ class MainActivity : AppCompatActivity(), StatementAdapter.OnItemClickListener {
             // If the user swipes the right way, the statement disappears. If not, a Snackbar message with "Wrong!" appears.
             override fun onSwiped(viewHolder: RecyclerView.ViewHolder, direction: Int) {
                 val position = viewHolder.adapterPosition
-                if ((direction == ItemTouchHelper.LEFT && statements.get(position).answer == false) || direction == ItemTouchHelper.RIGHT && statements.get(position).answer == true) {
+                if ((direction == ItemTouchHelper.LEFT && statements[position].answer == false) || direction == ItemTouchHelper.RIGHT && statements[position].answer == true) {
                     statements.removeAt(position)
                 } else {
                     Snackbar.make(binding.rvStatements, R.string.wrong, Snackbar.LENGTH_LONG).show()
